@@ -10,13 +10,13 @@ import React from "react";
 export default function Hero() {
   return (
     <section className="md:h-[calc(100vh-60px)] flex max-sm:justify-center items-center max-sm:pb-10">
-      <div className="w-[600px] rounded-full h-[600px] bg-purple-600 blur-2xl -rotate-45 absolute -left-[400px] md:-left-[300px] top-5 opacity-40 -z-10"></div>
+      <div className="w-[600px] rounded-full h-[600px] bg-purple-600 blur-2xl -rotate-45 absolute -left-[400px] md:-left-[300px] top-5 opacity-40 -z-20"></div>
       <Image
         src="/honeycomb.svg"
         alt="honeycomb"
         width={200}
         height={200}
-        className="absolute -left-30 -top-10 w-[500px] opacity-30"
+        className="absolute -left-30 -top-10 w-[500px] opacity-30 -z-10"
       />
       <div className="px-5 md:px-20 z-20 max-sm:flex-col max-sm:justify-center flex items-center md:gap-20 gap-5 max-sm:py-20">
         <Image
