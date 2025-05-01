@@ -33,13 +33,13 @@ export default function Hero() {
           <div className="relative h-10 overflow-hidden">
             <div className="word-slider animate-slide flex flex-col">
               <span className="h-10 flex items-center justify-center text-[18px] md:text-4xl font-orbitron font-semibold">
-              Web3 Growth strategist
+                Web3 Growth strategist
               </span>
               <span className="h-10 flex items-center justify-center text-[18px] md:text-4xl font-orbitron py-[25px] font-semibold">
-              Web3 Project Ambassador
+                Web3 Project Ambassador
               </span>
               <span className="h-10 flex items-center justify-center text-[18px] md:text-4xl font-orbitron font-semibold">
-              Content Creator
+                Content Creator
               </span>
             </div>
           </div>

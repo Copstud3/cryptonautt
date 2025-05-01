@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
 @import "tailwindcss";
 
 :root {
@@ -14,7 +14,7 @@
   --font-orbitron: "Orbitron";
 }
 
-html{
+html {
   scroll-behavior: smooth;
   @apply overflow-x-hidden;
 }
@@ -23,7 +23,6 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Inter;
-
 }
 
 @layer utilities {
@@ -54,4 +53,3 @@ body {
 .button-hover:hover {
   @apply bg-gradient-to-r from-[#430375] to-[#9b08d0];
 }
-
