@@ -1,9 +1,10 @@
-"use client"
+"use client";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import SocialCard from "./social-card";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Connect() {
   useEffect(() => {
@@ -14,7 +15,6 @@ export default function Connect() {
     });
   }, []);
   return (
-     
     <section
       className="px-5 md:px-20 h-fit pb-20 font-inter pt-10"
       data-aos="fade-right"
@@ -26,63 +26,64 @@ export default function Connect() {
       <p className="text-[16px] md:text-[30px] font-medium mt-10 text-center">
         Stay connected with me through my socials
       </p>
-      <div className="flex flex-col justify-center items-center mt-10 gap-10" data-aos='fade-up'>
-      
-          <SocialCard>
-            <Image
-              src="/x-logo.png"
-              alt="x-logo"
-              width={100}
-              height={100}
-              className="w-[40px] bg-white p-1 rounded-md"
-            />
-            <p>
-              X/Twitter:{" "}
-              <a href="https://x.com/cryptonautt_" className="text-slate-400">
-                @cryptonautt_
-              </a>
+      <div
+        className="flex flex-col justify-center items-center mt-10 gap-10"
+        data-aos="fade-up"
+      >
+        <Link href='https://x.com/cryptonautt_' target="_blank"><SocialCard>
+          <Image
+            src="/x-logo.png"
+            alt="x-logo"
+            width={100}
+            height={100}
+            className="w-[40px] bg-white p-1 rounded-md"
+          />
+          <p>
+            X/Twitter{" "}
+            <p  className="text-slate-400 hover:text-purple-400">
+              @cryptonautt_
             </p>
-          </SocialCard>
-        
+          </p>
+        </SocialCard>
+        </Link>
 
-
-          <SocialCard>
-            <Image
-              src="/telegram.png"
-              alt="telegram-logo"
-              width={100}
-              height={100}
-              className="w-[40px] bg-white p-1 rounded-md"
-            />
-            <p>
-              Telegram:{" "}
-              <a href="https://t.me/OxCrypt0n" className="text-slate-400">
-                @OxCrpt0n
-              </a>
+        <Link href='https://t.me/OxCrypt0n' target="_blank">
+        <SocialCard>
+          <Image
+            src="/telegram.png"
+            alt="telegram-logo"
+            width={100}
+            height={100}
+            className="w-[40px] bg-white p-1 rounded-md"
+          />
+          <p>
+            Telegram{" "}
+            <p  className="text-slate-400 hover:text-purple-400">
+              @OxCrpt0n
             </p>
-          </SocialCard>
-        
+          </p>
+        </SocialCard>
+        </Link>
 
-    
-          <SocialCard>
-            <Image
-              src="/tiktok.svg"
-              alt="tiktok-logo"
-              width={100}
-              height={100}
-              className="w-[40px] bg-white p-1 rounded-md"
-            />
-            <p>
-              TIktok:{" "}
-              <a
-                href="https://www.tiktok.com/@cryptonautt?_t=zm-8vbitnpa5q9&_r=1"
-                className="text-slate-400"
-              >
-                @cryptonautt
-              </a>
+        <Link href='https://www.tiktok.com/@cryptonautt?_t=zm-8vbitnpa5q9&_r=1' target="_blank">
+        <SocialCard>
+          <Image
+            src="/tiktok.svg"
+            alt="tiktok-logo"
+            width={100}
+            height={100}
+            className="w-[40px] bg-white p-1 rounded-md"
+          />
+          <p>
+            TIktok{" "}
+            <p
+              className="text-slate-400 hover:text-purple-400"
+            >
+              @cryptonautt
             </p>
-          </SocialCard>
-  
+          </p>
+        </SocialCard>
+        </Link>
       </div>
     </section>
   );

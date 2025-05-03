@@ -34,7 +34,7 @@ export default function Hero() {
           alt="cryptonautt"
           width={300}
           height={300}
-          className="rounded-full border-2 border-purple-800 shadow-lg shadow-purple-800/50 hover:scale-110 transition-all duration-300 md:w-[400px] w-[200px]"
+          className="rounded-full border-2 border-purple-800 shadow-lg shadow-purple-800/50 hover:scale-110 transition-all duration-300 md:w-[300px] xl:w-[400px] w-[200px]"
           data-aos="zoom-in-right"
         />
         <div className="flex flex-col items-center">
