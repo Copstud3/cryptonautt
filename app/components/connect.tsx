@@ -15,23 +15,20 @@ export default function Connect() {
     });
   }, []);
   return (
-    <section
-      className="px-5 md:px-20 h-fit pb-20 font-inter pt-10"
-      
-    >
-      <div data-aos='fade-right'>
-      <h1 className="text-xl md:text-4xl font-orbitron font-semibold">
-        Keep in touch
-      </h1>
-      <div className="h-[2px] w-15 md:w-30 rounded-md mt-2 md:mt-4 bg-white"></div>
-      
-      <p className="text-[16px] md:text-[30px] font-medium mt-10 text-center">
-        Stay connected with me through my socials
-      </p>
+    <section className="px-5 md:px-20 h-fit pb-20 font-inter pt-10">
+      <div data-aos="fade-right">
+        <h1 className="text-xl md:text-4xl font-orbitron font-semibold">
+          Keep in touch
+        </h1>
+        <div className="h-[2px] w-15 md:w-30 rounded-md mt-2 md:mt-4 bg-white"></div>
+
+        <p className="text-[16px] md:text-[30px] font-medium mt-10 text-center">
+          Stay connected with me through my socials
+        </p>
       </div>
       <div
         className="flex flex-col justify-center items-center mt-10 gap-10"
-        data-aos='fade-up'
+        data-aos="fade-up"
       >
         <Link href="https://x.com/cryptonautt_" target="_blank">
           <SocialCard>

@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 
 // const words = [
 //   { text: "Web3 Growth strategist" },
@@ -47,10 +48,10 @@ export default function Hero() {
           <div className="relative h-10 overflow-hidden" data-aos="zoom-in-up">
             <div className="word-slider animate-slide flex flex-col">
               <span className="h-10 flex items-center justify-center text-[18px] md:text-4xl font-orbitron font-semibold py-0">
-                Project Growth strategist
+                Project Ambassador
               </span>
               <span className="h-10 flex items-center justify-center text-[18px] md:text-4xl font-orbitron font-semibold py-[25px]">
-                Project Ambassador
+                Project Growth strategist
               </span>
               <span className="h-10 flex items-center justify-center text-[18px] md:text-4xl font-orbitron font-semibold py-[25px]">
                 Content Creator
@@ -60,14 +61,14 @@ export default function Hero() {
               </span>
             </div>
           </div>
-          <a href="/RESUME.pdf" target="_blank">
+          <Link href="https://docs.google.com/document/d/16fO9JhxBC_A1fH5ldVAjJKIX7C09oVBkInPVbadL6c4/edit?usp=sharing" target="_blank">
             <button
               data-aos="fade-down"
               className="button-hover px-4 py-3 md:px-8 md:py-3 rounded-sm font-orbitron font-semibold cursor-pointer uppercase hover:scale-105 mt-10 md:text-[22px]"
             >
               My Resume
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </section>
