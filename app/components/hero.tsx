@@ -61,7 +61,10 @@ export default function Hero() {
               </span>
             </div>
           </div>
-          <Link href="https://docs.google.com/document/d/16fO9JhxBC_A1fH5ldVAjJKIX7C09oVBkInPVbadL6c4/edit?usp=sharing" target="_blank">
+          <Link
+            href="https://docs.google.com/document/d/16fO9JhxBC_A1fH5ldVAjJKIX7C09oVBkInPVbadL6c4/edit?usp=sharing"
+            target="_blank"
+          >
             <button
               data-aos="fade-down"
               className="button-hover px-4 py-3 md:px-8 md:py-3 rounded-sm font-orbitron font-semibold cursor-pointer uppercase hover:scale-105 mt-10 md:text-[22px]"
