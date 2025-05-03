@@ -14,7 +14,10 @@ export default function Footer() {
               Chris
             </a>
           </p>
-          <p className="max-sm:text-[15px]">Date: {date.toDateString()}</p>
+          {/* <div className="flex gap-4"> */}
+          <p className="max-sm:text-[15px]">We keep building!</p>
+          {/* <p className="max-sm:text-[15px]">Date: {date.toDateString()}</p> */}
+          {/* </div> */}
         </div>
       </div>
     </section>
