@@ -1,10 +1,24 @@
-import React from "react";
+"use client"
+import AOS from "aos";
+import "aos/dist/aos.css";
+import React, {useEffect} from "react";
 import SocialCard from "./social-card";
 import Image from "next/image";
 
 export default function Connect() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      easing: "ease", // Easing function
+      once: true, // Animation happens only once
+    });
+  }, []);
   return (
-    <section className="px-5 md:px-20 h-fit pb-20 font-inter"  data-aos="fade-right">
+     
+    <section
+      className="px-5 md:px-20 h-fit pb-20 font-inter pt-10"
+      data-aos="fade-right"
+    >
       <h1 className="text-xl md:text-4xl font-orbitron font-semibold">
         Keep in touch
       </h1>
@@ -12,8 +26,8 @@ export default function Connect() {
       <p className="text-[16px] md:text-[30px] font-medium mt-10 text-center">
         Stay connected with me through my socials
       </p>
-      <div className="flex flex-col justify-center items-center mt-10 gap-10">
-        <div  data-aos="zoom-in-right">
+      <div className="flex flex-col justify-center items-center mt-10 gap-10" data-aos='fade-up'>
+      
           <SocialCard>
             <Image
               src="/x-logo.png"
@@ -29,9 +43,9 @@ export default function Connect() {
               </a>
             </p>
           </SocialCard>
-        </div>
+        
 
-        <div data-aos="fade-left">
+
           <SocialCard>
             <Image
               src="/telegram.png"
@@ -47,9 +61,9 @@ export default function Connect() {
               </a>
             </p>
           </SocialCard>
-        </div>
+        
 
-        <div  data-aos="fade-up">
+    
           <SocialCard>
             <Image
               src="/tiktok.svg"
@@ -68,7 +82,7 @@ export default function Connect() {
               </a>
             </p>
           </SocialCard>
-        </div>
+  
       </div>
     </section>
   );

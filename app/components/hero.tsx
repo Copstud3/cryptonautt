@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useEffect } from "react";
 import AOS from "aos";
-import 'aos/dist/aos.css';
+import "aos/dist/aos.css";
 
 // const words = [
 //   { text: "Web3 Growth strategist" },
@@ -38,7 +38,10 @@ export default function Hero() {
           data-aos="zoom-in-right"
         />
         <div className="flex flex-col items-center">
-          <h2 className="font-orbitron font-semibold text-[30px] md:text-[100px]" data-aos="zoom-in-up">
+          <h2
+            className="font-orbitron font-semibold text-[30px] lg:text-[60px] xl:text-[90px]"
+            data-aos="zoom-in-up"
+          >
             I&apos;m Cryptonautt
           </h2>
           <div className="relative h-10 overflow-hidden" data-aos="zoom-in-up">
@@ -57,7 +60,14 @@ export default function Hero() {
               </span>
             </div>
           </div>
-           <a href="/RESUME.pdf" target="_blank"><button data-aos="fade-down" className="button-hover px-4 py-3 md:px-8 md:py-3 rounded-sm font-orbitron font-semibold cursor-pointer uppercase hover:scale-105 mt-10 md:text-[22px]">My Resume</button></a>
+          <a href="/RESUME.pdf" target="_blank">
+            <button
+              data-aos="fade-down"
+              className="button-hover px-4 py-3 md:px-8 md:py-3 rounded-sm font-orbitron font-semibold cursor-pointer uppercase hover:scale-105 mt-10 md:text-[22px]"
+            >
+              My Resume
+            </button>
+          </a>
         </div>
       </div>
     </section>

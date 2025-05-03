@@ -2,8 +2,6 @@
 import React, { useRef, useState, useEffect } from "react";
 
 export default function Contact() {
-
-  
   const formRef = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState({
     name: "",
@@ -14,7 +12,7 @@ export default function Contact() {
   const [status, setStatus] = useState<string | null>(null);
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormData({
@@ -64,7 +62,7 @@ export default function Contact() {
 
   return (
     <section
-      className="px-5 md:px-20 md:h-[calc(100vh-60px)] relative max-sm:py-20  z-20 md:mb-30"
+      className="px-5 md:px-20 h-fit relative z-20 md:mb-15"
       id="message"
     >
       <div className="pb-10">
@@ -130,7 +128,11 @@ export default function Contact() {
               {loading ? "Sending..." : "Send Message"}
             </button>
           </div>
-          {status && <p className="mx-auto text-sm text-green-500 border border-green-500 bg-green-500/10 rounded-sm py-2 w-fit px-3">{status}</p>}
+          {status && (
+            <p className="mx-auto text-sm text-green-500 border border-green-500 bg-green-500/10 rounded-sm py-2 w-fit px-3">
+              {status}
+            </p>
+          )}
         </form>
       </div>
       <div className="w-[600px] rounded-full h-[400px] bg-purple-600 blur-2xl -rotate-45 absolute -left-[400px] bottom-[200px] opacity-40 -z-20"></div>

@@ -4,7 +4,7 @@ interface XProps {
   className?: string;
 }
 
-export default function XLogoSvg({className}: XProps) {
+export default function XLogoSvg({ className }: XProps) {
   return (
     <div className={`${className}`}>
       <svg
