@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Navbar from "./components/navbar";
 
 export const metadata: Metadata = {
   title: "Cryptonautt",
@@ -13,7 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="max-sm:w-screen ">{children}</body>
+      <body className="max-sm:w-screen ">
+        <Navbar />
+        <div className="overflow-x-hidden">{children}</div>
+        </body>
     </html>
   );
 }

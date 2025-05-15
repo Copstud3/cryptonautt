@@ -18,10 +18,9 @@ html {
   scroll-behavior: smooth;
 }
 
-html,
-body {
+/* html{
   overflow-x: hidden;
-}
+} */
 
 body {
   background: var(--background);
