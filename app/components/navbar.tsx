@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -6,11 +6,11 @@ import React, { useState, useEffect } from "react";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
-  
+
   useEffect(() => {
     const handleScroll = () => {
-      // Change state when scroll position is greater than 10px
-      const isScrolled = window.scrollY > 10;
+      // Change state when scroll position is greater than 2px
+      const isScrolled = window.scrollY > 2;
       if (isScrolled !== scrolled) {
         setScrolled(isScrolled);
       }
@@ -18,7 +18,7 @@ export default function Navbar() {
 
     // Add scroll event listener
     window.addEventListener("scroll", handleScroll);
-    
+
     // Clean up the event listener
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -27,7 +27,7 @@ export default function Navbar() {
 
   return (
     <section className="z-40 sticky top-0">
-      <div 
+      <div
         className={`transition-all duration-300 px-5 md:px-20 h-[60px] md:h-[80px] flex justify-between items-center ${
           scrolled ? "backdrop-blur-md bg-purple-400/20 shadow-md" : ""
         }`}

@@ -17,7 +17,7 @@ export default function RootLayout({
       <body className="max-sm:w-screen ">
         <Navbar />
         <div className="overflow-x-hidden">{children}</div>
-        </body>
+      </body>
     </html>
   );
 }
